@@ -1,3 +1,11 @@
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  img {
+    width: 100%;
+  }
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -11,8 +19,14 @@ body {
   left: 2em;
 } */
 
+.GoTop{
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  filter: drop-shadow(2px 2px 2px grey);
+}
 
-.main-header {
+#main-header {
   background-color: lightgrey;
   margin: auto;
   width: 80%;
@@ -60,10 +74,12 @@ li a:hover {
 }
 
 
+
 .headerLogo {
   position: absolute;
-  top: 10%;
+  top: 20%;
   bottom: 10%;
+  width:20%;
 }
 
 
@@ -88,7 +104,7 @@ p::first-letter {
 }
 
 
-.maincontent {
+#mainContent {
   background-color: lightgrey;
 /*   border: 2px solid black; */
   padding: 20px;
@@ -98,20 +114,24 @@ p::first-letter {
   text-indent: 10px;
 }
 
-.maincontent p { 
+#mainContent p { 
  text-indent: 50px;
 }
 
-.content1 {
+.carouselContent {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
 
-.content1 > h1 {
+.carouselContent h5 {
   text-align: center;
-  color: #3e8e41;
+  color: white;
+  background: rgba(171, 208, 176, 0.6);
+  padding: 15px;
+  width: 20em;
+  margin: auto;
 }
 
 
@@ -120,13 +140,13 @@ p::first-letter {
 }
 
 
-.content2 {
+#aboutMe {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
-.content2 > h2 {
+#aboutMe > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -154,7 +174,7 @@ p::first-letter {
   cursor: pointer;
   color: white;
   background-color: #302f2b;
-  box-shadow: 0 9px #aba89f;
+  box-shadow: 2px 2px 2px 2px #aba89f;
 }
 
 
@@ -164,28 +184,36 @@ p::first-letter {
 
  .knowMore:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  box-shadow: 2px 2px 2px 2px #666;
   transform: translateY(4px);
 }
 
-.content3 {
+#mySkills {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
-.content3 > h2 {
+#mySkills > h2 {
   color: #3e8e41;
   text-align: center;
 }
 
-.myPortfolio {
+
+.HardeepSkillsPic{
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+
+#myPortfolio {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
-.myPortfolio > h2 {
+#myPortfolio > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -254,14 +282,14 @@ p::first-letter {
 }
 
 
-.contactMe {
+#contactMe {
   background-color: white;
   padding: 20px;
   margin: 15px;
 }
 
 
-.contactMe > h2 {
+#contactMe > h2 {
   color: #3e8e41;
   text-align: center;
 }
@@ -297,7 +325,7 @@ p::first-letter {
 }
 
 
-.content-col {
+#myBlog {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 5px;
